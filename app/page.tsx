@@ -190,7 +190,7 @@ export default function HomePage() {
                 <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/70 p-3 shadow-[0_20px_60px_rgba(60,40,20,0.08)]">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src="/h3.png"
+                      src="/HH3.png"
                       alt="Zur kleinen Küche Atmosphäre"
                       fill
                       className="object-cover transition duration-700 hover:scale-[1.04]"
