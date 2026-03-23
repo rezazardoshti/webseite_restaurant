@@ -84,10 +84,10 @@ export default function KontaktPage() {
                     Telefon
                   </p>
                   <a
-                    href="tel:+490000000000"
+                    href="tel:+4929215595658"
                     className="mt-3 block text-sm leading-7 text-[#4e433b] transition hover:text-[#8a6b52] sm:text-[15px]"
                   >
-                    +49 000 0000000
+                    +49 2921 5595658
                   </a>
                 </div>
 
@@ -110,7 +110,7 @@ export default function KontaktPage() {
                   <p className="mt-3 text-sm leading-7 text-[#4e433b] sm:text-[15px]">
                     Täglich geöffnet
                     <br />
-                    Bitte telefonisch anfragen
+                    11:00 - 20:00 Uhr
                   </p>
                 </div>
               </div>

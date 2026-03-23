@@ -76,7 +76,7 @@ export default function ImpressumPage() {
                   Vertreten durch
                 </h2>
                 <p className="mt-4 text-sm leading-8 sm:text-[15px]">
-                  [Name des Inhabers / der Inhaberin]
+                  Iman Tarfa
                 </p>
               </div>
 
@@ -86,7 +86,7 @@ export default function ImpressumPage() {
                     Kontakt
                   </h3>
                   <p className="mt-3 text-sm leading-8 sm:text-[15px]">
-                    Telefon: +49 000 0000000
+                    Telefon: +49 2921 5595658
                     <br />
                     E-Mail: info@zurkleinenkueche.de
                   </p>
@@ -100,7 +100,7 @@ export default function ImpressumPage() {
                     Umsatzsteuer-Identifikationsnummer gemäß § 27 a
                     Umsatzsteuergesetz:
                     <br />
-                    [USt-IdNr.]
+                    DE460701466
                   </p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function ImpressumPage() {
                   Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
                 </h2>
                 <p className="mt-4 text-sm leading-8 sm:text-[15px]">
-                  [Name des Verantwortlichen]
+                  Iman Tarfa
                   <br />
                   Kaiserstraße 11
                   <br />

@@ -29,7 +29,7 @@ export default function Footer() {
 
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/zurkleinenkueche"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -55,22 +55,7 @@ export default function Footer() {
                 </svg>
               </a>
 
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white/75 shadow-sm transition duration-300 hover:-translate-y-1 hover:bg-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-5 w-5"
-                >
-                  <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3V11H8v3h2.2v8h3.3Z" />
-                </svg>
-              </a>
+              
             </div>
           </div>
 
@@ -84,7 +69,7 @@ export default function Footer() {
                 59505 Bad Sassendorf
               </p>
               <p>info@zurkleinenkueche.de</p>
-              <p>+49 000 0000000</p>
+              <p>+49 2921 5595658</p>
             </div>
           </div>
 

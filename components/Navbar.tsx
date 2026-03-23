@@ -75,7 +75,7 @@ export default function Navbar() {
                 Zur kleinen Küche
               </span>
               <span className="font-heading mt-1 text-[9px] uppercase tracking-[0.28em] text-[#8a6b52] sm:text-[10px] md:text-xs">
-                Restaurant
+                
               </span>
             </div>
           </Link>

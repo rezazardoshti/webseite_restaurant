@@ -72,7 +72,7 @@ export default function AboutPage() {
 
             <div data-reveal className="reveal">
               <Image
-                src="/hero_2.jpg"
+                src="/H1.png"
                 alt="Restaurant Atmosphäre"
                 width={600}
                 height={700}

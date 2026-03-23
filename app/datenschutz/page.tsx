@@ -72,7 +72,7 @@ export default function DatenschutzPage() {
                   <br />
                   E-Mail: info@zurkleinenkueche.de
                   <br />
-                  Telefon: +49 000 0000000
+                  Telefon: +49 2921 5595658
                 </p>
               </div>
 

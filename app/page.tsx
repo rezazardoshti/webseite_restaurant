@@ -125,7 +125,7 @@ export default function HomePage() {
                   <div className="overflow-hidden rounded-[1.6rem] border border-black/5 bg-white shadow-sm">
                     <div className="relative aspect-[4/5] w-full sm:aspect-[5/4] lg:aspect-[4/5]">
                       <Image
-                        src="/hero_1.jpg"
+                        src="/H1.png"
                         alt="Atmosphäre im Restaurant Zur kleinen Küche"
                         fill
                         priority
@@ -133,23 +133,7 @@ export default function HomePage() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#1f1a17]/35 via-[#1f1a17]/10 to-white/10" />
 
-                      <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                        <div className="rounded-2xl border border-white/20 bg-white/10 p-4 text-white backdrop-blur-md">
-                          <p className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/80 sm:text-xs">
-                            Mit Liebe serviert
-                          </p>
-                          <h2 className="font-heading mt-3 text-2xl font-semibold leading-tight sm:text-3xl">
-                            Genuss, Wärme und
-                            <span className="font-brand mt-2 block text-4xl text-[#f3dfc8] sm:text-5xl">
-                              echte Gastlichkeit
-                            </span>
-                          </h2>
-                          <p className="mt-3 text-sm leading-7 text-white/90 sm:text-[15px]">
-                            Ein Besuch soll sich schon online freundlich,
-                            hochwertig und einladend anfühlen.
-                          </p>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -162,7 +146,9 @@ export default function HomePage() {
                     Öffnungszeiten
                   </p>
                   <p className="mt-1 text-sm font-medium text-[#1f1a17] sm:text-base">
-                    Täglich mit Genussmomenten
+                    Täglich mit Genussmomenten <br/>
+                    Montag-Sonntag <br/>
+                    11:00 - 20:00 Uhr
                   </p>
                 </div>
               </div>
@@ -186,7 +172,7 @@ export default function HomePage() {
                 <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/70 p-3 shadow-[0_20px_60px_rgba(60,40,20,0.08)]">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src="/hero_2.jpg"
+                      src="/H4.png"
                       alt="Zur kleinen Küche Atmosphäre"
                       fill
                       className="object-cover transition duration-700 hover:scale-[1.04]"
