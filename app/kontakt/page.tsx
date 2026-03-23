@@ -99,7 +99,7 @@ export default function KontaktPage() {
                     href="mailto:info@zurkleinenkueche.de"
                     className="mt-3 block text-sm leading-7 text-[#4e433b] transition hover:text-[#8a6b52] sm:text-[15px]"
                   >
-                    info@zurkleinenkueche.de
+                    zurkleinenkueche@gmail.com
                   </a>
                 </div>
 

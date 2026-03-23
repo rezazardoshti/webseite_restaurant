@@ -68,7 +68,7 @@ export default function Footer() {
                 <br />
                 59505 Bad Sassendorf
               </p>
-              <p>info@zurkleinenkueche.de</p>
+              <p>zurkleinenkueche@gmail.com</p>
               <p>+49 2921 5595658</p>
             </div>
           </div>

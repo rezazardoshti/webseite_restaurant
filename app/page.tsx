@@ -1,12 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
+  const heroImages = ["/H7.png", "/H6.png", "/H8.png", "/H1.png"];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
   useEffect(() => {
     const elements = document.querySelectorAll<HTMLElement>("[data-reveal]");
 
@@ -29,6 +33,14 @@ export default function HomePage() {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
 
   return (
     <>
@@ -124,16 +136,22 @@ export default function HomePage() {
                 <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-[#f6efe5] p-3 shadow-[0_20px_80px_rgba(60,40,20,0.12)]">
                   <div className="overflow-hidden rounded-[1.6rem] border border-black/5 bg-white shadow-sm">
                     <div className="relative aspect-[4/5] w-full sm:aspect-[5/4] lg:aspect-[4/5]">
-                      <Image
-                        src="/H1.png"
-                        alt="Atmosphäre im Restaurant Zur kleinen Küche"
-                        fill
-                        priority
-                        className="object-cover transition duration-700 hover:scale-[1.03]"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#1f1a17]/35 via-[#1f1a17]/10 to-white/10" />
+                      {heroImages.map((img, index) => (
+                        <Image
+                          key={img}
+                          src={img}
+                          alt="Atmosphäre im Restaurant Zur kleinen Küche"
+                          fill
+                          priority={index === 0}
+                          className={`object-cover transition-all duration-1000 hover:scale-[1.03] ${
+                            index === currentImage
+                              ? "opacity-100"
+                              : "pointer-events-none opacity-0"
+                          }`}
+                        />
+                      ))}
 
-                      
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#1f1a17]/35 via-[#1f1a17]/10 to-white/10" />
                     </div>
                   </div>
                 </div>
@@ -146,8 +164,8 @@ export default function HomePage() {
                     Öffnungszeiten
                   </p>
                   <p className="mt-1 text-sm font-medium text-[#1f1a17] sm:text-base">
-                    Täglich mit Genussmomenten <br/>
-                    Montag-Sonntag <br/>
+                    Täglich mit Genussmomenten <br />
+                    Montag-Sonntag <br />
                     11:00 - 20:00 Uhr
                   </p>
                 </div>
@@ -172,7 +190,7 @@ export default function HomePage() {
                 <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/70 p-3 shadow-[0_20px_60px_rgba(60,40,20,0.08)]">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src="/H4.png"
+                      src="/h3.png"
                       alt="Zur kleinen Küche Atmosphäre"
                       fill
                       className="object-cover transition duration-700 hover:scale-[1.04]"
