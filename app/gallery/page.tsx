@@ -10,7 +10,7 @@ const images = [
   "/H2.png",
   "/Gulaschsuppe.png",
   "/flammen mit lux.png",
-  "/h3.png",
+  "/Nuddel.png",
   "/Leberkäse mit Spiegelei, Bratkartoffeln und Salat.png",
   "/Tomatensuppe.png",
   "/Salatteller mit Hähnchenbrust.png",
