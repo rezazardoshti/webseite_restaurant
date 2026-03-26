@@ -88,7 +88,7 @@ export default function ImpressumPage() {
                   <p className="mt-3 text-sm leading-8 sm:text-[15px]">
                     Telefon: +49 2921 5595658
                     <br />
-                    E-Mail: info@zurkleinenkueche.de
+                    E-Mail: zurkleinenkueche@gmail.com
                   </p>
                 </div>
 
