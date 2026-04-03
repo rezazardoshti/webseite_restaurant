@@ -4,7 +4,18 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 
-const menuSections = [
+type MenuItem = {
+  name: string;
+  price: string;
+  description?: string;
+};
+
+type MenuSection = {
+  title: string;
+  items: MenuItem[];
+};
+
+const menuSections: MenuSection[] = [
   {
     title: "Suppen",
     items: [
@@ -42,7 +53,7 @@ const menuSections = [
   {
     title: "Fleischgerichte",
     items: [
-      { name: "15. Hähnchenbrust mit Pommes und Salat", price: "€ 14,50" },
+      { name: "15. Hähnchenbrust mit Pommes und Salat", price: "€ 14.50" },
       { name: "16. Leberkäse mit Spiegelei, Bratkartoffeln und Salat", price: "€ 14.50" },
       { name: "17. Sülze mit Bratkartoffeln und Salat", price: "€ 10.50" },
     ],
@@ -61,6 +72,36 @@ const menuSections = [
       { name: "21. Nudeln mit Champignon-Rahmsauce und Lachs", price: "€ 15.90" },
       { name: "22. Nudeln mit Champignon-Rahmsauce und Hähnchen", price: "€ 13.90" },
       { name: "23. Nudeln mit Champignon-Rahmsauce", price: "€ 11.90" },
+    ],
+  },
+  {
+    title: "Spargelgerichte",
+    items: [
+      {
+        name: "Spargel mit Schnitzel",
+        description: "Frischer Spargel, Schnitzel, Sauce Hollandaise & Kartoffeln",
+        price: "€ 18.90",
+      },
+      {
+        name: "Stangenspargel mit Sauce Hollandaise",
+        description: "Frischer Spargel mit Sauce Hollandaise & Kartoffeln",
+        price: "€ 15.50",
+      },
+      {
+        name: "Spargel mit Schinken",
+        description: "Frischer Spargel mit Kochschinken, Sauce Hollandaise & Kartoffeln",
+        price: "€ 17.50",
+      },
+      {
+        name: "Spargel mit Lachs",
+        description: "Frischer Spargel mit Lachsfilet, Sauce Hollandaise & Rösti",
+        price: "€ 18.90",
+      },
+      {
+        name: "Spargelcremesuppe",
+        description: "Cremige Suppe aus frischem Spargel",
+        price: "€ 5.90",
+      },
     ],
   },
   {
@@ -176,9 +217,8 @@ export default function SpeisekartePage() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-[15px] leading-7 text-[#4e433b] sm:text-base sm:leading-8">
-  Diese Seite ist jetzt auf Basis deiner hochgeladenen Speisekarte aufgebaut.
-  Die Kategorien und Gerichte orientieren sich direkt an der PDF-Struktur.
-</p>
+              
+            </p>
           </div>
         </section>
 
@@ -211,9 +251,17 @@ export default function SpeisekartePage() {
                       key={`${section.title}-${item.name}`}
                       className="flex items-start justify-between gap-4 border-b border-black/5 pb-4 last:border-b-0 last:pb-0"
                     >
-                      <p className="pr-2 text-sm leading-6 text-[#3f352e] sm:text-[15px]">
-                        {item.name}
-                      </p>
+                      <div className="pr-2">
+                        <p className="text-sm leading-6 text-[#3f352e] sm:text-[15px]">
+                          {item.name}
+                        </p>
+
+                        {section.title === "Spargelgerichte" && item.description && (
+                          <p className="mt-1 text-xs leading-5 text-[#6b5f57] sm:text-sm">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
 
                       <span className="shrink-0 rounded-full bg-[#8a6b52]/10 px-3 py-1 text-sm font-medium text-[#8a6b52]">
                         {item.price}
@@ -229,15 +277,14 @@ export default function SpeisekartePage() {
             data-reveal
             className="reveal mt-12 mx-auto max-w-5xl rounded-[2rem] border border-black/5 bg-[#1f1a17] px-6 py-10 text-center text-white shadow-[0_20px_60px_rgba(31,26,23,0.18)] sm:px-10 sm:py-12"
           >
-            
             <h2 className="font-heading mt-4 text-3xl font-semibold sm:text-4xl">
-  Lassen Sie sich verwöhnen
-</h2>
+              Lassen Sie sich verwöhnen
+            </h2>
 
-<p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/80 sm:text-[15px] sm:leading-8">
-  Entdecken Sie unsere Auswahl und genießen Sie eine Küche, die mit
-  Liebe zum Detail und einem Gespür für Geschmack zubereitet wird.
-</p>
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/80 sm:text-[15px] sm:leading-8">
+              Entdecken Sie unsere Auswahl und genießen Sie eine Küche, die mit
+              Liebe zum Detail und einem Gespür für Geschmack zubereitet wird.
+            </p>
           </div>
         </section>
       </main>
