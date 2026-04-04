@@ -95,7 +95,7 @@ const menuSections: MenuSection[] = [
       {
         name: "Spargel mit Lachs",
         description: "Frischer Spargel mit Lachsfilet, Sauce Hollandaise & Rösti",
-        price: "€ 18.90",
+        price: "€ 19.50",
       },
       {
         name: "Spargelcremesuppe",
@@ -238,7 +238,7 @@ export default function SpeisekartePage() {
               >
                 <div className="mb-5 border-b border-[#8a6b52]/15 pb-4">
                   <p className="font-heading text-[11px] uppercase tracking-[0.28em] text-[#8a6b52] sm:text-xs">
-                    Kategorie
+                    
                   </p>
                   <h2 className="font-heading mt-2 text-2xl font-semibold leading-tight text-[#1f1a17] sm:text-3xl">
                     {section.title}
